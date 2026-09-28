@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "Halal Vision - Penjaga Pandangan" },
+  "appDescription": { "message": "Pendamping pemburaman media lokal." },
+  "protection": { "message": "Perlindungan" },
+  "blurStrength": { "message": "Kekuatan buram" },
+  "trustSite": { "message": "Percayai situs ini" },
+  "trustedSites": { "message": "Situs tepercaya" },
+  "language": { "message": "Bahasa" },
+  "theme": { "message": "Tema" },
+  "font": { "message": "Fon" },
+  "accentColor": { "message": "Warna aksen" },
+  "saveSettings": { "message": "Simpan pengaturan" }
+}

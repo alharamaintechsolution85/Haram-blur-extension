@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "حلال وژن - نگاہ کی حفاظت" },
+  "appDescription": { "message": "مقامی طور پر میڈیا دھندلا کرنے کا ساتھی۔" },
+  "protection": { "message": "حفاظت" },
+  "blurStrength": { "message": "دھندلاپن کی شدت" },
+  "trustSite": { "message": "اس سائٹ پر اعتماد کریں" },
+  "trustedSites": { "message": "قابل اعتماد سائٹس" },
+  "language": { "message": "زبان" },
+  "theme": { "message": "تھیم" },
+  "font": { "message": "فونٹ" },
+  "accentColor": { "message": "نمایاں رنگ" },
+  "saveSettings": { "message": "ترتیبات محفوظ کریں" }
+}

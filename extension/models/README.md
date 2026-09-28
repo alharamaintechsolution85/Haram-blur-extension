@@ -1,0 +1,1 @@
+`blaze_face_short_range.tflite` is the MediaPipe BlazeFace short-range face detection model, downloaded from Google's MediaPipe model storage. It detects face locations only; it does not classify gender. The extension runs it locally and does not upload images.

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaze Guard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="topline"><div class="mark" aria-hidden="true">◉</div><div class="brand"><strong data-t="title">Gaze Guard</strong><span>Halal Vision</span></div><button id="enabled" class="toggle" role="switch" aria-checked="true" aria-label="Protection"></button></header>
+    <section class="hero"><div class="hero-ornament" aria-hidden="true">۞</div><p class="eyebrow" data-t="tagline">A little more intention</p><h1 data-t="heroTitle">Keep your space gentle.</h1><p data-t="heroBody">Media blur runs on this device. No images are sent anywhere.</p></section>
+    <section class="verse"><p class="arabic" lang="ar" dir="rtl">يَغُضُّوا مِنْ أَبْصَارِهِمْ</p><p data-t="verseTranslation">“Tell the believing men to lower their gaze...”</p><small data-t="verseReference">Qur’an · An-Nur 24:30</small><p class="hadith" data-t="hadithTranslation">“The adultery of the eye is the lustful look.”</p><small data-t="hadithReference">Sahih Muslim · 2657a</small></section>
+    <section class="control"><div class="control-heading"><label for="blur" data-t="blur">Blur strength</label><output id="blur-value">25px</output></div><input id="blur" type="range" min="0" max="50" step="1" value="25"><div class="range-labels"><span>Clear</span><span>Soft</span><span>Strong</span></div></section>
+    <label class="profile-control"><span>Profile preference</span><select id="gender" aria-describedby="face-scope"><option value="male">Male</option><option value="female">Female</option></select></label>
+    <small class="face-scope" id="face-scope" data-t="faceScope">Face regions only. No gender inference.</small>
+    <div class="theme-line"><span>Current theme</span><strong id="theme-name">Pastel green</strong></div>
+    <button id="trust-site" class="trust-button" type="button"><span aria-hidden="true">＋</span><span data-t="allow">Trust this site</span></button>
+    <button id="open-web-settings" class="web-settings" type="button"><span>Open web settings</span><span aria-hidden="true">↗</span></button>
+    <footer><span class="local-dot"></span><span data-t="localProcessing">Local processing · Settings stay here</span><button id="open-options" type="button" aria-label="Open settings">⚙</button></footer>
+  </main>
+  <script src="i18n.js"></script><script src="popup.js"></script>
+</body>
+</html>

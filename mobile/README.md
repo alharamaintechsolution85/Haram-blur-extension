@@ -1,0 +1,1 @@
+The Expo application is reserved for a later project slice. This starter does not include mobile dependencies or claim cross-device synchronization; dashboard preferences are currently stored in browser local storage.

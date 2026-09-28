@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaze Guard settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <main class="settings-page">
+    <header class="page-header"><a class="back" href="popup.html" aria-label="Gaze Guard home">←</a><div><span class="eyebrow">Halal Vision</span><h1>Gaze Guard settings</h1><p>Set up a calmer, more personal experience.</p></div></header>
+    <section class="settings-panel">
+      <div class="section-heading"><h2>Appearance</h2><p>Choose how the extension looks on this device.</p></div>
+      <label class="form-row"><span><strong data-t="language">Language</strong><small>Applies to extension controls.</small></span><select id="language"><option value="en">English</option><option value="ur">اردو</option><option value="ar">العربية</option><option value="hi">हिन्दी</option><option value="es">Español</option><option value="fr">Français</option><option value="tr">Türkçe</option><option value="id">Bahasa Indonesia</option></select></label>
+      <label class="form-row"><span><strong data-t="theme">Theme</strong><small>Color system for extension pages.</small></span><select id="theme"><option value="pastel">Soft green</option><option value="light">Light</option><option value="dark">Deep slate</option><option value="emerald">Emerald</option><option value="blue">Deep blue</option><option value="purple">Purple</option><option value="custom">Custom accent</option></select></label>
+      <label class="form-row"><span><strong data-t="font">Font</strong><small>Uses locally available fonts.</small></span><select id="font"><option value="system">System default</option><option value="inter">Inter</option><option value="tajawal">Tajawal</option><option value="roboto">Roboto</option><option value="outfit">Outfit</option><option value="serif">Serif</option><option value="sans">Sans-serif</option></select></label>
+      <label class="form-row"><span><strong>Arabic font</strong><small>Uses a font installed on this device.</small></span><select id="arabicFont"><option value="amiri">Amiri</option><option value="tajawal">Tajawal</option></select></label>
+      <label class="form-row"><span><strong data-t="accent">Accent color</strong><small>Pick a custom interface accent.</small></span><input id="accent" type="color" value="#2e7d32" aria-label="Accent color"></label>
+    </section>
+    <section class="settings-panel">
+      <div class="section-heading"><h2>Web dashboard</h2><p>Use the HTTPS URL of your deployed settings page to enable secure preference sync.</p></div>
+      <label class="form-row"><span><strong>Settings page URL</strong><small>Only this origin can send settings to the extension.</small></span><input id="webSettingsUrl" type="url" placeholder="https://your-project.vercel.app/settings"></label>
+    </section>
+    <section class="settings-panel">
+      <div class="section-heading"><h2 data-t="trusted">Trusted sites</h2><p>Blur is bypassed on these domains.</p></div>
+      <form id="domain-form" class="domain-form"><label class="sr-only" for="domain">Website domain</label><input id="domain" type="text" placeholder="example.com" autocomplete="off"><button type="submit">Add domain</button></form>
+      <ul id="domains" class="domain-list"></ul>
+    </section>
+    <div id="status" role="status" aria-live="polite"></div>
+  </main>
+  <script src="i18n.js"></script><script src="options.js"></script>
+</body>
+</html>

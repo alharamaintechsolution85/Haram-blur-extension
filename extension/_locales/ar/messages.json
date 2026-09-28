@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "حلال فيجن - حارس النظر" },
+  "appDescription": { "message": "رفيق لتمويه الوسائط محلياً." },
+  "protection": { "message": "الحماية" },
+  "blurStrength": { "message": "قوة التمويه" },
+  "trustSite": { "message": "ثق بهذا الموقع" },
+  "trustedSites": { "message": "المواقع الموثوقة" },
+  "language": { "message": "اللغة" },
+  "theme": { "message": "السمة" },
+  "font": { "message": "الخط" },
+  "accentColor": { "message": "لون التمييز" },
+  "saveSettings": { "message": "حفظ الإعدادات" }
+}

@@ -1,0 +1,1 @@
+The files in this directory are copied from `@mediapipe/tasks-vision` 1.0.1 and are used by the extension's on-device face detector. The package is licensed under Apache License 2.0; see `LICENSE-MEDIAPIPE.txt`.

@@ -1,0 +1,18 @@
+.hv-face-blur {
+  position: fixed !important;
+  z-index: 2147483647 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+  border: 0 !important;
+  border-radius: 18% !important;
+  background: rgba(237, 244, 238, 0.16) !important;
+  -webkit-backdrop-filter: blur(var(--hv-face-blur, 18px)) !important;
+  backdrop-filter: blur(var(--hv-face-blur, 18px)) !important;
+  pointer-events: none !important;
+  transition: opacity 140ms ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hv-face-blur { transition: none !important; }
+}

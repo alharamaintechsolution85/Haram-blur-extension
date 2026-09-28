@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Halal Vision - Gaze Guard",
+  "version": "0.1.0",
+  "description": "A local-first media blur companion.",
+  "default_locale": "en",
+  "content_security_policy": { "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'" },
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Gaze Guard",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "web_accessible_resources": [{
+    "resources": ["vendor/vision_wasm*.js", "vendor/vision_wasm*.wasm", "models/*.tflite"],
+    "matches": ["http://*/*", "https://*/*"]
+  }],
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "exclude_matches": [
+      "http://gemini.google.com/*",
+      "http://*.gemini.google.com/*",
+      "https://gemini.google.com/*",
+      "https://*.gemini.google.com/*",
+      "http://chatgpt.com/*",
+      "http://*.chatgpt.com/*",
+      "https://chatgpt.com/*",
+      "https://*.chatgpt.com/*"
+    ],
+    "js": ["vendor/vision_bundle.js", "content.js"],
+    "css": ["content.css"],
+    "run_at": "document_idle"
+  }]
+}

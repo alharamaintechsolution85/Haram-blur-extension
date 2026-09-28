@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "हलाल विज़न - नज़र सुरक्षा" },
+  "appDescription": { "message": "स्थानीय मीडिया धुंधला करने वाला साथी।" },
+  "protection": { "message": "सुरक्षा" },
+  "blurStrength": { "message": "धुंधलापन" },
+  "trustSite": { "message": "इस साइट पर भरोसा करें" },
+  "trustedSites": { "message": "विश्वसनीय साइटें" },
+  "language": { "message": "भाषा" },
+  "theme": { "message": "थीम" },
+  "font": { "message": "फ़ॉन्ट" },
+  "accentColor": { "message": "मुख्य रंग" },
+  "saveSettings": { "message": "सेटिंग सहेजें" }
+}

@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "Halal Vision - Gaze Guard" },
+  "appDescription": { "message": "A local-first media blur companion." },
+  "protection": { "message": "Protection" },
+  "blurStrength": { "message": "Blur strength" },
+  "trustSite": { "message": "Trust this site" },
+  "trustedSites": { "message": "Trusted sites" },
+  "language": { "message": "Language" },
+  "theme": { "message": "Theme" },
+  "font": { "message": "Font" },
+  "accentColor": { "message": "Accent color" },
+  "saveSettings": { "message": "Save settings" }
+}

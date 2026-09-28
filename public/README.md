@@ -1,0 +1,1 @@
+Place the dashboard brand mark or hero artwork in this folder when ready. The current dashboard uses a CSS-built mark and does not require an image asset.

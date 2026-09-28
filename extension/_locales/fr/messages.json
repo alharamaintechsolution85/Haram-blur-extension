@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "Halal Vision - Protection du regard" },
+  "appDescription": { "message": "Un filtre multimédia local." },
+  "protection": { "message": "Protection" },
+  "blurStrength": { "message": "Intensité du flou" },
+  "trustSite": { "message": "Faire confiance à ce site" },
+  "trustedSites": { "message": "Sites de confiance" },
+  "language": { "message": "Langue" },
+  "theme": { "message": "Thème" },
+  "font": { "message": "Police" },
+  "accentColor": { "message": "Couleur d’accent" },
+  "saveSettings": { "message": "Enregistrer les paramètres" }
+}

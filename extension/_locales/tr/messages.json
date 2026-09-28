@@ -1,0 +1,13 @@
+{
+  "appName": { "message": "Halal Vision - Bakış Koruması" },
+  "appDescription": { "message": "Yerel medya bulanıklaştırma aracı." },
+  "protection": { "message": "Koruma" },
+  "blurStrength": { "message": "Bulanıklık" },
+  "trustSite": { "message": "Bu siteye güven" },
+  "trustedSites": { "message": "Güvenilen siteler" },
+  "language": { "message": "Dil" },
+  "theme": { "message": "Tema" },
+  "font": { "message": "Yazı tipi" },
+  "accentColor": { "message": "Vurgu rengi" },
+  "saveSettings": { "message": "Ayarları kaydet" }
+}

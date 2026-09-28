@@ -1,0 +1,1 @@
+Server route handlers belong here. Authentication, Supabase synchronization, AI providers, and rate limiting are not configured in this starter; add server-only credentials through `.env.local` before implementing those integrations.

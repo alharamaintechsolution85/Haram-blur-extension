@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Haram Blur
 
-## Getting Started
+Local-first dashboard and Manifest V3 browser extension starter.
 
-First, run the development server:
+## Dashboard
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Install dependencies with `npm install` and start the app with `npm run dev`. The dashboard stores preferences, consent, and the Mehram list in browser local storage.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copy `.env.example` to `.env.local` to enable Supabase email/password authentication. Set the project's Supabase URL and publishable key, plus `NEXT_PUBLIC_SITE_URL`; add `<site-url>/auth/callback` to Supabase's allowed redirect URLs. Workspace routes remain in local mode when Supabase credentials are absent.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Preferences are stored locally. On the deployed settings origin, configure the same HTTPS URL in the extension's options page to enable the origin-scoped dashboard/extension settings bridge. No Supabase preference table is assumed or provisioned.
 
-## Learn More
+Keep service-role keys, AI provider keys, and Redis tokens server-side; never use them in browser or extension code.
 
-To learn more about Next.js, take a look at the following resources:
+## Chrome extension
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open `chrome://extensions`, enable Developer mode, choose **Load unpacked**, and select the `extension` directory. The extension bundles MediaPipe and a local face detector model, then places blur overlays only over detected face regions in visible images and video frames. It leaves surrounding media and video playback unchanged; CSS background images are not processed. It does not infer gender. All preferences are stored with `chrome.storage.local`, and the detector makes no network requests.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Current boundaries
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Gender classification, mobile/Expo support, family synchronization, prayer-time scheduling, automated analytics, and AI/Redis integrations are not implemented yet. `app/api/README.md` and `mobile/README.md` mark their intended locations. Dashboard artwork is in `public/`.
